@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title> TITLE </title>
+    <link rel="stylesheet" type= "text/css" href= "contact.css">
+</head>
+
+<body>
+<div class="header" >
+        <h1><b>2°o</b></h1>
+        <div class="links">
+                <a href="index.html"> Home </a>
+                <a href="menu.html" id="active" > Menu </a>
+                <a href="about.html"> About us </a>
+                <a href="contact.html"> Contact Us </a>
+        </div>
+</div>
+<script type="text/javascript">
+    function printvalue(){
+        var name=document.form_1.name.value;
+        var last=document.form_1.lname.value;
+        alert("welcome: "+name +last);
+    }
+    function toggle(){
+       var pass = document.getElementById("pass");
+	if(pass.type == "password"){
+	pass.type ="text";
+        }
+        else{
+            pass.type = "password";}} 
+</script>
+
+
+<div class="text-content">
+    <h2>wELCOME</h2>
+    <p>Welcome to 2°o, you can contact us at <pre>
+            XXXXX@XXXXX.COM , 080XXXXXXX882
+    </pre>!</p>
+  </div>
+<form name="form_1">
+    Enter Name:<input type="text" name="name"/>
+    Enter Email:<input type="text" name="lname"/>
+    Enter Purpose:<input type="text" name="purpose"/>
+    <input type="button" onclick="printvalue()"
+    value="thank you for contacting"/>
+</form >
+Enter password: <input type="password" id="pass" value="">
+<input type="checkbox" onclick="toggle()">show password
+</body>
+</html>

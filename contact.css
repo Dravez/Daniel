@@ -1,0 +1,50 @@
+body{
+    background-image: url("images.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: 100px;
+}
+    .header{
+        text-align: right;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .links{
+        background-color: rgb(114, 58, 99);
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    .links a{
+        text-decoration: none;
+        float: left;
+        display: block;
+        padding: 10px;
+        
+    }
+
+    a:visited{
+        color: rgb(19, 136, 64);
+    }
+    a:hover{
+        color: deeppink;
+        text-decoration: underline;
+    }
+    a:active{
+        color: rgb(74, 27, 169);
+    }
+    #active{
+        background-color: bisque;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .text-content {
+        margin-left: 20px;
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
